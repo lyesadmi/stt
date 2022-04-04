@@ -1,4 +1,4 @@
-import makeSTT from './STT';
+import makeSTT from './Stt';
 import TailReader from '../reader/implem/TailReader';
 import Transcriber from '../transcriber/implem/Transcriber';
 import VADProvider from '../providers/implem/vad';

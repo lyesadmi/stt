@@ -1,4 +1,4 @@
-import STT from './STT/implem';
+import STT from './stt/implem';
 
 const stt = new STT();
 
