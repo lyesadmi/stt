@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "build",                          
+    "rootDir": "src",
+    "types": ["node", "@types/jest"],
+    "typeRoots" : ["./node_modules/@types"]
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "esModuleInterop": true
+    }
+  },
+  "extends": "@tsconfig/node16-strictest-esm",
+  "include": [
+    "src/**/*"
+  ],
+  "exclude" : [
+    "src/**/*.test.ts"
+  ]
+}
