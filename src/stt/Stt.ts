@@ -9,7 +9,7 @@ function makeSTT({
   reader: IReader;
   transcriber: ITranscriber;
 }) {
-  return class STT extends EventEmitter {
+  return class Stt extends EventEmitter {
     private _transcriber: ITranscriber = transcriber;
     private readonly _reader: IReader = reader;
 
@@ -21,7 +21,7 @@ function makeSTT({
       });
     }
 
-    public transcribe(filePath: string): STT {
+    public transcribe(filePath: string): Stt {
       const stream = this._reader.read(filePath);
       this._transcriber.transcribe(stream);
 
