@@ -6,13 +6,13 @@ import { EventEmitter } from 'events';
 import EventsProviders from '../../providers/domain/events';
 
 type Dependencies = {
-  eventsNames: any;
+  eventsNames: typeof EventsProviders;
   providers: Provider[];
 };
 
 class Transcriber extends EventEmitter implements ITranscriber {
   private _props: Provider[] = [];
-  private readonly _eventsNames: any;
+  private readonly _eventsNames: Dependencies['eventsNames'];
   private _stop = false;
 
   private constructor({ eventsNames, providers }: Dependencies) {
