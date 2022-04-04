@@ -1,6 +1,6 @@
 import makeSTT from './STT';
-import TailReader from '../reader/implem/tail-reader';
-import Transcriber from '../transcriber/implem/transcriber';
+import TailReader from '../reader/implem/TailReader';
+import Transcriber from '../transcriber/implem/Transcriber';
 import VADProvider from '../providers/implem/vad';
 
 export default makeSTT({
